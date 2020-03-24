@@ -1,5 +1,6 @@
 import socketserver
 import threading
+import time
 from utils import DnsRequest, Props
 
 class TCPHandler(socketserver.BaseRequestHandler):
@@ -15,7 +16,7 @@ class TCPHandler(socketserver.BaseRequestHandler):
         result = DnsRequest.resolve(self.data)
         print("{} Processing TCP request .. ".format(threading.current_thread()))
         print("TCP Request: {} ".format(self.data))
-        print("TCP Reply: {} {} ".format(len(result), result))
+        print("TCP Reply: {} ".format(result))
         self.request.sendall(result)
 
 class UDPHandler(socketserver.DatagramRequestHandler):
@@ -35,7 +36,7 @@ class UDPHandler(socketserver.DatagramRequestHandler):
         result = DnsRequest.resolve(datagram)
         print("{} Processing UDP request .. ".format(threading.current_thread()))
         print("UDP Request: {} ".format(self.request))
-        print("UDP Reply: {} {} ".format(len(result), result))
+        print("UDP Reply: {} ".format(result))
         self.wfile.write(result[2:])
 
 
