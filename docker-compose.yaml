@@ -1,0 +1,18 @@
+version: '3'
+services:
+  dns-proxy:
+    build: .
+    ports:
+      - "53:$APP_BIND_PORT/udp"
+      - "53:$APP_BIND_PORT/tcp"
+    image: "dns-tls-proxy:latest"
+    network_mode: bridge
+    environment:
+      APP_BIND_PORT: $APP_BIND_PORT
+      RESOLVER_HOSTNAME: $RESOLVER_HOSTNAME
+      RESOLVER_IP: $RESOLVER_IP
+      RESOLVER_PORT: $RESOLVER_PORT
+      APP_BIND_HOST: $APP_BIND_HOST
+      APP_BIND_PORT: $APP_BIND_PORT
+
+
