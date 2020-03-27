@@ -6,6 +6,7 @@
     - add support for IP filtering
     - get advertisers IP list
     - list from file => hashmap => efficient filtering
+    - explore DNSSEC
 
 ### APP VARS
 
