@@ -1,7 +1,11 @@
-# README.md: DNS over TLS proxy
+# README.md: DNS over TLS proxy [PROJECT HILDA]
 
 - Listens for DNS queries on port 53/tcp
 - Uses Cloudflare 1.1.1.1 over TCP/TLS 1.3 to resolve requests.
+- TODO: 
+    - add support for IP filtering
+    - get advertisers IP list
+    - list => hashmap => smart filtering
 
 ### APP VARS
 
