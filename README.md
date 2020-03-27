@@ -18,18 +18,6 @@ using the .env file under ./
     - APP_BIND_PORT
     - THREAD_TIMEOUT
 
-## security
-
-- does not use DNSSEC. Resolved Addresses may be altered by privileged attacker.
-- does not use blacklists/whitelists
-
-## future-work
-
-- Add Caching
-- Add Proper logging
-- Add Error handelling
-- Add Sane tests
-
 ## run // build // deploy
 
 ```
