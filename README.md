@@ -35,5 +35,3 @@ watch dig +tcp @localhost example.com
 ```
 watch dig @localhost example.com
 ```
-
-<p style="text-align:center;"><a href="https://raw.githubusercontent.com/Shokodemon/python-dns-over-tls/master/workspace.png"><img src="https://raw.githubusercontent.com/Shokodemon/python-dns-over-tls/master/workspace.png" align="center" height="600" width="800" ></a><p>
