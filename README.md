@@ -5,7 +5,7 @@
 - TODO: 
     - add support for IP filtering
     - get advertisers IP list
-    - list => hashmap => smart filtering
+    - list => hashmap => efficient filtering
 
 ### APP VARS
 
